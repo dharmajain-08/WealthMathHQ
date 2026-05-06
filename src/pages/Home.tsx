@@ -23,9 +23,9 @@ import { CALCULATORS } from '../constants';
 import { motion } from 'motion/react';
 
 const HeroSection = () => (
-  <section className="relative bg-white pt-32 pb-48 overflow-hidden">
+  <section className="relative bg-white pt-16 pb-24 overflow-hidden">
     <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, #000 1px, transparent 0)', backgroundSize: '40px 40px' }}></div>
-    <div className="max-w-7xl mx-auto px-6 sm:px-10 relative z-10 text-center">
+    <div className="max-w-7xl mx-auto px-3 sm:px-5 relative z-10 text-center">
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -53,8 +53,8 @@ const HeroSection = () => (
 );
 
 const ValueStrip = () => (
-  <section className="bg-brand-bg-alt border-y border-brand-border py-10">
-    <div className="max-w-7xl mx-auto px-4">
+  <section className="bg-brand-bg-alt border-y border-brand-border py-5">
+    <div className="max-w-7xl mx-auto px-2">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
         {[
           { icon: Zap, text: "Data-Driven Math" },
@@ -75,8 +75,8 @@ const ValueStrip = () => (
 );
 
 const FeaturesSection = () => (
-  <section className="py-32 bg-white">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <section className="py-16 bg-white">
+    <div className="max-w-7xl mx-auto px-2 sm:px-3 lg:px-4">
       <div className="text-center max-w-3xl mx-auto mb-20">
         <h2 className="text-[10px] font-black text-brand-primary uppercase tracking-[4px] mb-4 text-center">Our Expertise</h2>
         <h2 className="text-4xl md:text-6xl font-heading font-black text-brand-navy mb-6 tracking-tight">
@@ -220,11 +220,11 @@ const FAQSection = () => {
   ];
 
   return (
-    <section className="py-32 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-20">
+    <section className="py-16 bg-white">
+      <div className="max-w-7xl mx-auto px-3">
+        <div className="text-center mb-10">
           <h2 className="text-[10px] font-black text-brand-primary uppercase tracking-[4px] mb-4">Common Questions</h2>
-          <h2 className="text-4xl md:text-6xl font-heading font-black text-brand-navy tracking-tight italic">Frequently <br /> Asked.</h2>
+          <h2 className="text-4xl md:text-6xl font-heading font-black text-brand-navy tracking-tight italic">Frequently Asked.</h2>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12">
@@ -245,9 +245,9 @@ const FAQSection = () => {
 };
 
 const CategoryPreview = () => (
-  <section className="py-32 bg-brand-bg-alt">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-       <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+  <section className="py-16 bg-brand-bg-alt">
+    <div className="max-w-7xl mx-auto px-2 sm:px-3 lg:px-4">
+       <div className="flex flex-col md:flex-row justify-between items-end mb-10 gap-8">
          <div className="max-w-2xl">
            <h2 className="text-[10px] font-black text-brand-primary uppercase tracking-[4px] mb-4">Precision Tools</h2>
            <h2 className="text-4xl md:text-6xl font-heading font-black text-brand-navy mb-4 tracking-tight leading-none text-left italic">Calculators for life.</h2>
@@ -291,9 +291,9 @@ const CategoryPreview = () => (
 );
 
 const FinalCTA = () => (
-  <section className="py-32 bg-white text-center relative overflow-hidden">
-    <div className="max-w-4xl mx-auto px-6 relative z-10">
-      <h2 className="text-4xl md:text-7xl font-heading font-black text-brand-navy mb-10 tracking-tighter leading-none">Your wealth, <br /> architected.</h2>
+  <section className="py-16 bg-white text-center relative overflow-hidden">
+    <div className="max-w-4xl mx-auto px-3 relative z-10">
+      <h2 className="text-4xl md:text-7xl font-heading font-black text-brand-navy mb-10 tracking-tighter leading-none">Your wealth, architected.</h2>
       <p className="text-xl text-brand-muted mb-12 font-medium max-w-2xl mx-auto italic">"Your money is already working. The question is whether it's working hard enough."</p>
       <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
         <Link to="/contact">

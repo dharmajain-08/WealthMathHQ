@@ -49,14 +49,11 @@ export const YouTubeView = () => {
     <div className="bg-brand-bg min-h-screen pb-32">
       {/* Header */}
       <section className="bg-white border-b border-brand-border pt-32 pb-40 text-center">
-        <div className="max-w-4xl mx-auto px-6">
+        <div className="max-w-4xl mx-auto px-3">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
           >
-            <div className="w-20 h-20 bg-red-50 rounded-2xl flex items-center justify-center mx-auto mb-8 border border-red-100">
-               <Youtube className="w-10 h-10 text-red-600" />
-            </div>
             <h1 className="text-5xl md:text-7xl font-heading font-black text-brand-navy mb-8 tracking-tighter">WealthMathHQ — Video Series</h1>
             <p className="text-xl text-brand-muted font-medium mb-12">
               Watch our video series where we break down the financial myths most advisors won't talk about.
@@ -74,7 +71,7 @@ export const YouTubeView = () => {
 
       {/* Video List Placeholder */}
       <section className="py-24">
-         <div className="max-w-4xl mx-auto px-6">
+         <div className="max-w-4xl mx-auto px-3">
             <motion.div 
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
