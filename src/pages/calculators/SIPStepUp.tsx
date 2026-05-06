@@ -262,11 +262,7 @@ export const SIPStepUpView = () => {
                     </tr>
                   </thead>
                   <tbody>
-                    {data.filter((_, i) => {
-                      if (years <= 15) return true;
-                      if (years <= 25) return i % 2 === 0 || i === years - 1;
-                      return i % Math.floor(years / 10) === 0 || i === years - 1;
-                    }).map((row) => (
+                    {data.map((row) => (
                       <tr key={row.year} className="border-b border-brand-bg hover:bg-brand-bg-alt transition-colors">
                         <td className="py-3 px-4 font-bold text-brand-navy">{row.year}</td>
                         <td className="py-3 px-4 text-xs font-bold text-brand-muted">{formatCurrency(initialSIP * Math.pow(1 + annualStepUp/100, row.year-1))}</td>

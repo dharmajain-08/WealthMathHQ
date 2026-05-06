@@ -107,8 +107,16 @@ export const LoanPartPaymentsView = () => {
           </div>
           <div className="mt-8 grid grid-cols-1 gap-2 w-full">
              <div className="p-4 bg-brand-bg rounded-2xl border border-brand-border flex justify-between items-center">
-                <span className="text-[10px] font-bold text-brand-muted uppercase tracking-wider">Total Repayment</span>
-                <span className="text-brand-navy font-black">{formatCurrency(loanAmount + result.totalInterest)}</span>
+                <span className="text-[10px] font-bold text-brand-muted uppercase tracking-wider">Principal Component</span>
+                <span className="text-brand-navy font-bold">{formatCurrency(loanAmount)}</span>
+             </div>
+             <div className="p-4 bg-brand-bg rounded-2xl border border-brand-border flex justify-between items-center">
+                <span className="text-[10px] font-bold text-brand-muted uppercase tracking-wider">Interest Component</span>
+                <span className="text-brand-danger font-bold">{formatCurrency(result.totalInterest)}</span>
+             </div>
+             <div className="p-4 bg-brand-navy rounded-2xl border border-brand-navy flex justify-between items-center shadow-lg">
+                <span className="text-[10px] font-bold text-white/70 uppercase tracking-widest">Total Repayment</span>
+                <span className="text-white font-black text-xl">{formatCurrency(loanAmount + result.totalInterest)}</span>
              </div>
           </div>
         </div>
