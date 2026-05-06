@@ -20,7 +20,7 @@ export const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-brand-navy text-white sticky top-0 z-50">
+    <nav className="bg-brand-navy text-white fixed top-0 left-0 w-full z-50 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 md:px-10">
         <div className="flex justify-between h-[80px]">
           <div className="flex items-center">
