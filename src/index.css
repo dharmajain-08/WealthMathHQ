@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&family=Poppins:wght@700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Manrope", sans-serif;
+  
+  --color-brand-bg: #eef3fb;
+  --color-brand-bg-alt: #f7f9ff;
+  --color-brand-card: #ffffff;
+  --color-brand-navy: #0f172a;
+  --color-brand-primary: #4f46e5;
+  --color-brand-secondary: #0f766e;
+  --color-brand-gold: #d4a72c;
+  --color-brand-warning: #d97706;
+  --color-brand-danger: #be123c;
+  --color-brand-text: #0f172a;
+  --color-brand-muted: #64748b;
+  --color-brand-border: #d8e2f2;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-bg text-brand-text font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+.calculator-card {
+  @apply bg-brand-card border border-brand-border rounded-2xl p-6 flex flex-col gap-4 transition-all shadow-[0_4px_6px_-1px_rgba(0,0,0,0.02)] hover:shadow-lg;
+}
+
+.input-container {
+  @apply space-y-4;
+}
+
+.kpi-card {
+  @apply p-6 rounded-2xl border border-brand-border bg-white shadow-[0_4px_6px_-1px_rgba(0,0,0,0.02)] transition-all hover:shadow-md;
+}
